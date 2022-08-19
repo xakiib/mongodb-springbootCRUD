@@ -44,3 +44,7 @@ Run both Back-end & Front-end in one place:
 ```
 mvn spring-boot:run
 ```
+## Setup mongodb container
+```
+docker run -d  --name some-mongo -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret -p 27017:27017 mongo
+```
